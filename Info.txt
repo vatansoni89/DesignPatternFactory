@@ -1,0 +1,10 @@
+Factory:
+  typesInThisAssembly: Assembly.GetExecutingAssembly().GetTypes();
+  Type cast bor create instance of a type: 
+    Activator.CreateInstance(t) as IAuto;
+	Assembly.GetExecutingAssembly().CreateInstance(factoryName) as IAutoFactory;
+  Abstract Factory: 
+    Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+	1. Factories create different types of concrete objects (products).
+	2. A factory now represents a "family" of objects that it can create.
+	3. Factories may have more than one factory method.
